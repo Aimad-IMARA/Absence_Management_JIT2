@@ -1,15 +1,13 @@
-package com.absenceManagement.modules;
+package com.absenceManagement.entities;
 
 public class Etudiant {
     private int age;
     private String id;
     private String name;
-    private String type;
-    public Etudiant(String id,String name,int age,String type){
+    public Etudiant(String id,String name,int age){
         this.age=age;
         this.id=id;
         this.name=name;
-        this.type=type;
     }
 
     public String getName() {
@@ -24,7 +22,4 @@ public class Etudiant {
         return age;
     }
 
-    public String getType() {
-        return type;
-    }
 }

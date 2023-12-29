@@ -1,15 +1,16 @@
-package com.absenceManagement.modules;
-import java.time.format.DateTimeFormatterBuilder;
+package com.absenceManagement.entities;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class Seance {
     private String id;
-    private ArrayList<Etudiant> etudiantsPresents;
-    private String date;
+    private List<Etudiant> etudiantsPresents;
+    private LocalDate date;
 
     public Seance(String id,
-                  ArrayList<Etudiant> etudiantsPresents,
-                  String date){
+                  List<Etudiant> etudiantsPresents,
+                  LocalDate date){
         this.id  = id;
         this.etudiantsPresents = etudiantsPresents;
         this.date = date;
@@ -19,4 +20,11 @@ public class Seance {
         return id;
     }
 
+    public List<Etudiant> getEtudiantsPresents() {
+        return etudiantsPresents;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
 }

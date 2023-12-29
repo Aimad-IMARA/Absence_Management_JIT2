@@ -1,8 +1,8 @@
-package com.absenceManagement.service;
+package com.absenceManagement.services;
 
-import com.absenceManagement.modules.Etudiant;
-import com.absenceManagement.modules.Seance;
+import com.absenceManagement.entities.Etudiant;
+import com.absenceManagement.entities.Seance;
 
 public interface AbsenceService {
-    void marquerPresence(Seance seance, Etudiant etudiant);
+    void marquerPresence(Seance seance);
 }
